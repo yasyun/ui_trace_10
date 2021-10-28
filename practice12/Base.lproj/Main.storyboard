@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practice12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXG-8e-zw8">
+                                <rect key="frame" x="0.0" y="215" width="414" height="286"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOG-rv-ijW">
+                                <rect key="frame" x="20" y="705" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.53725490196078429" green="0.80829118275639089" blue="0.41296288524285718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get Free Cash Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank With It" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-gy-0sx">
+                                <rect key="frame" x="139" y="529" width="136" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Access banking features like direct deposit, ATM withdrawals, and more" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp1-Zn-28u">
+                                <rect key="frame" x="54" y="582" width="307" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="FHU-86-sdE">
+                                <rect key="frame" x="0.0" y="631" width="414" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="ir1-fA-DEX"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="tapPageControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="iF0-EG-uRe"/>
+                                </connections>
+                            </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wUs-ww-77N">
+                                <rect key="frame" x="344" y="76" width="50" height="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="vS7-rq-GbP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cash Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-3c-G0K">
+                                <rect key="frame" x="20" y="87" width="118" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lp1-Zn-28u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="5Ew-Ad-Unz"/>
+                            <constraint firstItem="JXG-8e-zw8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-90" id="DcN-1d-kvw"/>
+                            <constraint firstItem="JXG-8e-zw8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E4f-Jv-4oY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uOG-rv-ijW" secondAttribute="bottom" constant="112" id="I33-n7-AIq"/>
+                            <constraint firstItem="wUs-ww-77N" firstAttribute="trailing" secondItem="uOG-rv-ijW" secondAttribute="trailing" id="ISX-3z-ZpJ"/>
+                            <constraint firstItem="Lp1-Zn-28u" firstAttribute="centerX" secondItem="FHU-86-sdE" secondAttribute="centerX" id="Mvz-bo-VJy"/>
+                            <constraint firstItem="FHU-86-sdE" firstAttribute="leading" secondItem="JXG-8e-zw8" secondAttribute="leading" id="Sb2-g7-FNz"/>
+                            <constraint firstItem="yI0-gy-0sx" firstAttribute="top" secondItem="JXG-8e-zw8" secondAttribute="bottom" constant="28" id="Si7-fp-Asi"/>
+                            <constraint firstItem="JXG-8e-zw8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W5n-Cb-R8x"/>
+                            <constraint firstItem="FAW-3c-G0K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZjK-oa-CK1"/>
+                            <constraint firstItem="FAW-3c-G0K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="gI3-Le-5VE"/>
+                            <constraint firstItem="JXG-8e-zw8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="171" id="gXB-TN-nyg"/>
+                            <constraint firstItem="FAW-3c-G0K" firstAttribute="centerY" secondItem="wUs-ww-77N" secondAttribute="centerY" id="hTZ-Ef-79S"/>
+                            <constraint firstItem="FHU-86-sdE" firstAttribute="top" secondItem="Lp1-Zn-28u" secondAttribute="bottom" constant="8" id="i4r-eU-JQL"/>
+                            <constraint firstItem="uOG-rv-ijW" firstAttribute="top" secondItem="FHU-86-sdE" secondAttribute="bottom" constant="37" id="jJ1-Xd-jJR"/>
+                            <constraint firstItem="Lp1-Zn-28u" firstAttribute="top" secondItem="yI0-gy-0sx" secondAttribute="bottom" constant="24" id="jSr-lU-kmd"/>
+                            <constraint firstItem="yI0-gy-0sx" firstAttribute="centerX" secondItem="Lp1-Zn-28u" secondAttribute="centerX" id="lus-ZW-5XW"/>
+                            <constraint firstItem="FHU-86-sdE" firstAttribute="centerX" secondItem="uOG-rv-ijW" secondAttribute="centerX" id="mNG-iC-2G8"/>
+                            <constraint firstItem="FHU-86-sdE" firstAttribute="trailing" secondItem="JXG-8e-zw8" secondAttribute="trailing" id="oot-e8-pa2"/>
+                            <constraint firstItem="JXG-8e-zw8" firstAttribute="top" secondItem="wUs-ww-77N" secondAttribute="bottom" constant="88.5" id="ss8-ce-dbS"/>
+                            <constraint firstItem="FAW-3c-G0K" firstAttribute="leading" secondItem="uOG-rv-ijW" secondAttribute="leading" id="xV9-IM-J36"/>
+                            <constraint firstItem="wUs-ww-77N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31.5" id="zNk-O6-6mD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="FHU-86-sdE" id="DUG-yz-otr"/>
+                        <outlet property="scrollView" destination="JXG-8e-zw8" id="Mpi-Dm-0tK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
